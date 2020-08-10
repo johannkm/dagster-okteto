@@ -1,2 +1,2 @@
 deploy:
-  - helm install dagster python_modules/libraries/dagster-k8s/helm/dagster/values.yaml -f python_modules/libraries/dagster-k8s/helm/dagster/values-okteto.yaml --set scheduler.schedulerNamespace=${OKTETO_NAMESPACE}
+  - helm upgrade --install dagster python_modules/libraries/dagster-k8s/helm/dagster -f python_modules/libraries/dagster-k8s/helm/dagster/values-okteto.yaml --set scheduler.schedulerNamespace=${OKTETO_NAMESPACE}
