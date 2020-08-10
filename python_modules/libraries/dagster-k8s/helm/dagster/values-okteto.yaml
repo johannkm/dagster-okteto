@@ -1,0 +1,7 @@
+scheduler:
+  k8sEnabled: true
+
+ingress:
+  enabled: true
+  annotations:
+    dev.okteto.com/generate-host: true
