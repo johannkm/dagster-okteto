@@ -1,2 +1,5 @@
+icon: https://user-images.githubusercontent.com/609349/57987382-7e294500-7a35-11e9-9c6a-f73e0f1d3a1c.png
 deploy:
-  - helm upgrade --install dagster python_modules/libraries/dagster-k8s/helm/dagster -f python_modules/libraries/dagster-k8s/helm/dagster/values-okteto.yaml --set scheduler.schedulerNamespace=${OKTETO_NAMESPACE}
+  - helm upgrade --install dagster python_modules/libraries/dagster-k8s/helm/dagster -f python_modules/libraries/dagster-k8s/helm/dagster/values-okteto.yaml --set scheduler.schedulerNamespace=${OKTETO_NAMESPACE} --history-max 1
+devs:
+  - okteto.yml

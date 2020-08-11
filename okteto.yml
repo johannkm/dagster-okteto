@@ -6,10 +6,12 @@ build:
   dockerfile: .dev.Dockerfile
 command:
 - bash
-workdir: /okteto
+workdir: /usr/src/app
 forward:
 - 8080:80
-volumes:
-- /root/.cache/pip
 persistentVolume:
   enabled: true
+resources:
+  limits: 
+    memory: 1Gi
+    cpu: 1

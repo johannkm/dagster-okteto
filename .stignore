@@ -1,3 +1,8 @@
 .git
 /screenshots
+/docs
+*.egginfo
 js_modules/dagit/node_modules
+js_modules/dagit/build
+
+

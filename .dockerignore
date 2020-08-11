@@ -1,0 +1,6 @@
+screenshots
+docs
+assets
+.buildkite
+js_modules/build
+js_modules/node_modules
