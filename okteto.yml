@@ -20,6 +20,6 @@ volumes:
   - /root/.yarn
 resources:
   limits: 
-    memory: 2Gi
+    memory: 3Gi
     cpu: 1500m
     
