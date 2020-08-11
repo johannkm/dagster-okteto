@@ -1,0 +1,15 @@
+name: dagit
+labels:
+  component: dagit
+image: ramiro/dagster:dev
+build:
+  dockerfile: .dev.Dockerfile
+command:
+- bash
+workdir: /okteto
+forward:
+- 8080:80
+volumes:
+- /root/.cache/pip
+persistentVolume:
+  enabled: true
