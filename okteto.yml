@@ -1,8 +1,8 @@
 name: dagit
 labels:
   component: dagit
-image: ramiro/dagster:dev
-build:
+image: 
+  name: ramiro/dagster:dev
   dockerfile: .dev.Dockerfile
 command:
 - bash
