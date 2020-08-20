@@ -19,7 +19,6 @@ volumes:
   - /root/.cache
   - /root/.yarn
 resources:
-  limits: 
+  limits:
     memory: 3Gi
     cpu: 1500m
-    
